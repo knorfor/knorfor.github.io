@@ -5,3 +5,4 @@ prose:
   metadata:
     _posts:
       layout: post
+      published: true
