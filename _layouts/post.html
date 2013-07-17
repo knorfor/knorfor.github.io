@@ -1,7 +1,22 @@
 ---
 layout: default
 ---
+<h1><a href="/" data-pjax>Sleeping Thoughts</a></h1>
 
+<ul class="posts">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}/" data-pjax>{{ post.title }}</a></li>
+    {% endfor %}   
+  </ul> 
+
+<div class="test">
+<div class="js-fetch">
 <article class='site__post'>
-{{ content }}
+	
+		<div class="site__content">
+		{{ content }}
+		</div>
+	
 </article>
+</div>
+</div>

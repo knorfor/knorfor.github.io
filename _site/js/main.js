@@ -3,14 +3,21 @@
             var loader = {
                 href:'',
                 load:function(href){
-
                     $('.test').fadeOut(300,function(){
                         //$('.site__post').hide();
-                        $(".test").hide().load(href+' '+'.site__content', function(){
+                        $(".test").hide().load(href+' '+'.js-fetch', function(){
                             $('.test').fadeIn(500);
                         });
                     });
+                    //alert('are there two?');
+                    if(href=='/'){
+                        history.pushState(null,null,'/');
+                        return;
+                    }
+                    history.pushState(null,null,href);
+                    
                 }
+
                 
             };
 
@@ -23,8 +30,11 @@
                     athis.parent().addClass('active');
                 },
                 reset:function(){
+                    //alert('resetting');
                     $('.active').removeClass('active');
-                    loader.load('/ .site__content');
+                    $('.test').children().fadeOut(500).remove();
+                    history.pushState(null,null, '/');
+                    //$('.test').children().remove();
                 }
             };
 
@@ -38,15 +48,20 @@
                             return;
                         }
                         loader.href = self.attr('href');
-                        if (loader.href=='/'){
+                        if (loader.href=='/index.html'){
                             nav.reset();
+
                             return;
                         }
                         loader.load(loader.href);
                         nav.activate(self);
+
                     });
 
                 }
             };
             bindUI.pjax();
+            urlnow = window.location.pathname;
+            console.log(urlnow);
+            $('[href="'+urlnow+'"]').parent().addClass('active');
         })(jQuery);
