@@ -1,13 +1,4 @@
 prose:
   metadata:
     _posts:
-      	name: "layout"
-        field:
-          element: "text"
-          label: "Layout"
-          value: "post"
-        name: "item"
-          field:
-            element: "select"
-            label: "Item"
-            placeholder: "Select an Item"
+      layout: post
