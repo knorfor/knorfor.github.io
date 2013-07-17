@@ -1,17 +1,3 @@
 name: Your New Jekyll Site
 pygments: true
 permalink: /:title
-
-prose:
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "text"
-          label: "Layout"
-          value: "post"
-      - name: "item"
-          field:
-            element: "select"
-            label: "Item"
-            placeholder: "Select an Item"
