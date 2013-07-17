@@ -11,6 +11,7 @@
                         });
                     });
                 }
+                
             };
 
             var nav = {
@@ -20,6 +21,10 @@
                         $('.posts').toggleClass('is-center');
                     }
                     athis.parent().addClass('active');
+                },
+                reset:function(){
+                    $('.active').removeClass('active');
+                    loader.load('/ .site__content');
                 }
             };
 
@@ -28,9 +33,17 @@
                    $('[data-pjax]').bind('click', function(event){
                         event.preventDefault(); 
                         var self = $(this);
+                        if(self.parent().hasClass('active')){
+                            nav.reset();
+                            return;
+                        }
                         loader.href = self.attr('href');
+                        if (loader.href=='/'){
+                            nav.reset();
+                            return;
+                        }
                         loader.load(loader.href);
-                        nav.activate(self)
+                        nav.activate(self);
                     });
 
                 }

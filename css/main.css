@@ -11,7 +11,7 @@ body{
 }
 
 .site__content{
-  padding-left:60px;
+  padding:0 0px 60px 60px;
 }
 
 article{
