@@ -1,8 +1,4 @@
 prose:
   metadata:
     _posts:
-      -	name: "layout"
-        field:
-          element: "text"
-          label: "Layout"
-          value: "post"
+      layout: post
