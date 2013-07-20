@@ -1,1 +1,8 @@
+---
+published: 
+  - false
+  - "true"
+layout: post
+---
+
 I find a wallet in the grass. It has an ID in it, so I think I'll be able to return it. All of a sudden, I am surrounded by a group of students. A ginger-haired man with a full beard and glasses is giving a religious lecture. Unable to take it any longer, I look at him and say, "Are you kidding me? This is the most anti-scientific thing I've ever heard! I can't believe the university lets you teach here. " He stares back at me, a bit bemused. "I'm appalled. But that's just what I think...and a lot of well-respected others." I glance at the students as I mutter those last few words, and walk out. I feel proud of myself. But I'm a tiny bit embarrassed to have to go back in because I forgot to pick up the lost wallet.
