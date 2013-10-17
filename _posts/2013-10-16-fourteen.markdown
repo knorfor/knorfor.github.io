@@ -5,9 +5,9 @@ published:
 layout: post
 ---
 
-Worries and Consolations  
+Worries and Consolations  <br>
 
-W: I'm broke. I can't find a job. I can't even choose a profession.  <br><br>
+W: I'm broke. I can't find a job. I can't even choose a profession.  <br>
 C: "The wage is the capitalist form of coercion. We are not fully enriched human beings, engaging in all forms of labor we wish to engage in, we are relegated to one form of labor in order to echange to meet our needs...under capitalism, we are forced into a box. These different forms of labor, or different expressions of our life-activity (the way in which we interact with the world around us) limit our ability to be multi-sided human beings."  
   
    
